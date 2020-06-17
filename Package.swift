@@ -2,7 +2,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "SwiftExample",
+    name: "NameExample",
     platforms: [
         .iOS(.v13),
     ],
@@ -12,7 +12,7 @@ let package = Package(
     dependencies: [],
     targets: [
         .target(
-          name: "MyLibrary",
+          name: "SwiftExample",
            dependencies: [], 
            path: "./SwiftExample"
            )
