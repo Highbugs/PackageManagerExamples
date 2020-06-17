@@ -2,14 +2,13 @@
 import PackageDescription
 
 let package = Package(
-    name: "SwiftExample",
+    name: "ExampleName",
     platforms: [
         .iOS(.v13),
     ],
     products: [
         .library(name: "SwiftExample", targets: ["SwiftExample"]),
     ],
-    dependencies: [],
     targets: [
         .target(
           name: "SwiftExample",
