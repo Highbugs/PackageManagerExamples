@@ -7,7 +7,7 @@ let package = Package(
         .iOS(.v13),
     ],
     products: [
-        .library(name: "SwiftExample", targets: ["SwiftExample"]),
+        .library(name: "LibraryName", targets: ["SwiftExample"]),
     ],
     targets: [
         .target(
