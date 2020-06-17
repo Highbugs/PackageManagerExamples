@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		06641C91249A28C8003BE207 /* MixedExample.h in Headers */ = {isa = PBXBuildFile; fileRef = 06641C8F249A28C8003BE207 /* MixedExample.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06641C99249A2901003BE207 /* ObjcTestClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 06641C97249A2901003BE207 /* ObjcTestClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06641C9A249A2901003BE207 /* ObjcTestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 06641C98249A2901003BE207 /* ObjcTestClass.m */; };
+		06641C9C249A2960003BE207 /* SwiftTestClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06641C9B249A2960003BE207 /* SwiftTestClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		06641C8C249A28C8003BE207 /* MixedExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MixedExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		06641C8F249A28C8003BE207 /* MixedExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MixedExample.h; sourceTree = "<group>"; };
 		06641C90249A28C8003BE207 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06641C97249A2901003BE207 /* ObjcTestClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjcTestClass.h; sourceTree = "<group>"; };
+		06641C98249A2901003BE207 /* ObjcTestClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjcTestClass.m; sourceTree = "<group>"; };
+		06641C9B249A2960003BE207 /* SwiftTestClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTestClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +54,9 @@
 			children = (
 				06641C8F249A28C8003BE207 /* MixedExample.h */,
 				06641C90249A28C8003BE207 /* Info.plist */,
+				06641C97249A2901003BE207 /* ObjcTestClass.h */,
+				06641C98249A2901003BE207 /* ObjcTestClass.m */,
+				06641C9B249A2960003BE207 /* SwiftTestClass.swift */,
 			);
 			path = MixedExample;
 			sourceTree = "<group>";
@@ -60,6 +69,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06641C91249A28C8003BE207 /* MixedExample.h in Headers */,
+				06641C99249A2901003BE207 /* ObjcTestClass.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +105,7 @@
 				TargetAttributes = {
 					06641C8B249A28C8003BE207 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -131,6 +142,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06641C9C249A2960003BE207 /* SwiftTestClass.swift in Sources */,
+				06641C9A249A2901003BE207 /* ObjcTestClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +154,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -204,6 +218,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -260,9 +275,11 @@
 		06641C95249A28C8003BE207 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = DAR8GLKRWU;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -273,9 +290,12 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = npaw.MixedExample;
+				PRODUCT_BUNDLE_IDENTIFIER = mrt.MixedExample;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,9 +304,11 @@
 		06641C96249A28C8003BE207 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = DAR8GLKRWU;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -297,8 +319,10 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = npaw.MixedExample;
+				PRODUCT_BUNDLE_IDENTIFIER = mrt.MixedExample;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
