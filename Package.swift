@@ -11,7 +11,7 @@ let package = Package(
     ],
     targets: [
         .target(
-          name: "SwiftExample",
+          name: "LibraryName",
            dependencies: [], 
            path: "./SwiftExample"
            )
