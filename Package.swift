@@ -23,7 +23,8 @@ let package = Package(
            .target(
           name: "objcExample",
            dependencies: [], 
-           path: "./objcExample"
+           path: "./objcExample",
+           publicHeadersPath: "./objcExample"
            )
     ]
 )
