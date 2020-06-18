@@ -8,6 +8,7 @@ let package = Package(
     ],
     products: [
         .library(name: "LibraryName", targets: ["SwiftExample"]),
+        .executable(name: "LibraryName", targets: ["SwiftExample"]),
     ],
     targets: [
         .target(
