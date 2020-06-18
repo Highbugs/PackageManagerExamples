@@ -4,14 +4,14 @@ import PackageDescription
 let package = Package(
     name: "ExampleName",
     platforms: [
-        .iOS(.v13),
+        .iOS(.v13)
     ],
     products: [
-        .library(name: "ExampleName", targets: ["SwiftExample"])
+        .library(name: "SwiftExample", targets: ["SwiftExample"])
     ],
     targets: [
         .target(
-          name: "ExampleName",
+          name: "SwiftExample",
            dependencies: [], 
            path: "./SwiftExample"
            )
