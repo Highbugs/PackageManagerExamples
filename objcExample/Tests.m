@@ -11,7 +11,7 @@
 @implementation Tests
 
 +(void)method {
-    NSLog(@"method")
+    NSLog(@"method");
 }
 
 @end
