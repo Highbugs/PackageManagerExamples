@@ -7,13 +7,23 @@ let package = Package(
         .iOS(.v13)
     ],
     products: [
-        .library(name: "SwiftExample", targets: ["SwiftExample"])
+        .library(
+          name: "SwiftExample", 
+          targets: [
+            "SwiftExample",
+            "objcExample"
+            ])
     ],
     targets: [
         .target(
           name: "SwiftExample",
            dependencies: [], 
            path: "./SwiftExample"
+           ),
+           .target(
+          name: "objcExample",
+           dependencies: [], 
+           path: "./objcExample"
            )
     ]
 )
