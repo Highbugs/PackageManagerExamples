@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		06641C7A249A27F2003BE207 /* SwiftExample.h in Headers */ = {isa = PBXBuildFile; fileRef = 06641C78249A27F2003BE207 /* SwiftExample.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		06641C81249A2820003BE207 /* TestClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06641C80249A2820003BE207 /* TestClass.swift */; };
+		06641CC7249BA849003BE207 /* Tests.h in Headers */ = {isa = PBXBuildFile; fileRef = 06641CC5249BA849003BE207 /* Tests.h */; };
+		06641CC8249BA849003BE207 /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06641CC6249BA849003BE207 /* Tests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +18,8 @@
 		06641C78249A27F2003BE207 /* SwiftExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftExample.h; sourceTree = "<group>"; };
 		06641C79249A27F2003BE207 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06641C80249A2820003BE207 /* TestClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestClass.swift; sourceTree = "<group>"; };
+		06641CC5249BA849003BE207 /* Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tests.h; sourceTree = "<group>"; };
+		06641CC6249BA849003BE207 /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,8 @@
 				06641C78249A27F2003BE207 /* SwiftExample.h */,
 				06641C79249A27F2003BE207 /* Info.plist */,
 				06641C80249A2820003BE207 /* TestClass.swift */,
+				06641CC5249BA849003BE207 /* Tests.h */,
+				06641CC6249BA849003BE207 /* Tests.m */,
 			);
 			path = SwiftExample;
 			sourceTree = "<group>";
@@ -62,6 +68,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06641CC7249BA849003BE207 /* Tests.h in Headers */,
 				06641C7A249A27F2003BE207 /* SwiftExample.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06641C81249A2820003BE207 /* TestClass.swift in Sources */,
+				06641CC8249BA849003BE207 /* Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
