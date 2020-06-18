@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 public class TestClass {
     public static func testMethod() {
         print("Test method called")
