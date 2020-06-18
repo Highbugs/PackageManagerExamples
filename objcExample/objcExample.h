@@ -17,3 +17,4 @@ FOUNDATION_EXPORT const unsigned char objcExampleVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <objcExample/PublicHeader.h>
 
 
+#import "Tests.h"

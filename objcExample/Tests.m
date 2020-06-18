@@ -10,4 +10,8 @@
 
 @implementation Tests
 
++(void)method {
+    NSLog(@"method")
+}
+
 @end
