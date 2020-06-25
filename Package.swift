@@ -18,8 +18,8 @@ let package = Package(
           name: "SwiftExample",
            dependencies: [], 
            path: "./SwiftExample"
-           ),
-           .target(
+           )
+          // .target(
           // name: "objcExample",
           //  dependencies: [], 
           //  path: "./objcExample",
