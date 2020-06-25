@@ -10,7 +10,8 @@ let package = Package(
         .library(
           name: "SwiftExample", 
           targets: [
-            "SwiftExample"
+            "SwiftExample",
+            "objcExample"
             ])
     ],
     targets: [
@@ -18,12 +19,12 @@ let package = Package(
           name: "SwiftExample",
            dependencies: [], 
            path: "./SwiftExample"
+           ),
+          .target(
+          name: "objcExample",
+           dependencies: [], 
+           path: "./objcExample",
+           publicHeadersPath: ""
            )
-          // .target(
-          // name: "objcExample",
-          //  dependencies: [], 
-          //  path: "./objcExample",
-          //  publicHeadersPath: ""
-          //  )
     ]
 )
