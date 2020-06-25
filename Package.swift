@@ -21,10 +21,10 @@ let package = Package(
            path: "./SwiftExample"
            ),
            .target(
-          name: "objcExample",
-           dependencies: [], 
-           path: "./objcExample",
-           publicHeadersPath: ""
-           )
+          // name: "objcExample",
+          //  dependencies: [], 
+          //  path: "./objcExample",
+          //  publicHeadersPath: ""
+          //  )
     ]
 )
