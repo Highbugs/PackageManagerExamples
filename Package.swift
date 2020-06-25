@@ -10,8 +10,7 @@ let package = Package(
         .library(
           name: "SwiftExample", 
           targets: [
-            "SwiftExample",
-            "objcExample"
+            "SwiftExample"
             ])
     ],
     targets: [
