@@ -6,9 +6,11 @@
 //
 
 import Foundation
+import objcExample
 
 public class TestClass {
     public static func testMethod() {
+        Tests.method()
         print("Test method called")
     }
 }
